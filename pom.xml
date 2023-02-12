@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.esa.api</groupId>
-	<artifactId>com.esa.api.emp</artifactId>
+	<artifactId>emp-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>esa emp service api</name>

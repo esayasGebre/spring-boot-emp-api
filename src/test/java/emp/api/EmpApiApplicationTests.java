@@ -7,7 +7,7 @@ import emp.api.controller.EmployeeController;
 
 
 @SpringBootTest(classes = EmployeeController.class)
-public class SpringBootRestApiApplicationTests {
+public class EmpApiApplicationTests {
 
 	//@Test
 	public void contextLoads() {

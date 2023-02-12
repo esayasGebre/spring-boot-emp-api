@@ -1,12 +1,12 @@
 # springBootRestAPI
-Technology used: Spring boot, Spring REST ws, JPA/Hibernate, Spring Data, JSON, MySQL database, Apache server
-IDE: Eclipse
+Technology used: Spring boot, Spring REST ws, JPA/Hibernate, Spring Data, JSON, MySQL database
+IDE: Spring Tool Suite
 Testing tool: Postman
 
-I have used different layers ( Domain, Controller, Service, Repository )
+Layers ( Domain, Controller, Service, Service Validation, Repository )
 
 
-sample:: using Postman::
+Sample test/interface postman 
 
 Inserting new Employee::
 POST  http://localhost:8080/springBootRestAPI/employee/

@@ -1,12 +1,11 @@
-package springbootrestservice.app.controller;
+package emp.api.controller;
 
 import java.util.List;
-
-import javax.ws.rs.core.MediaType;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import springbootrestservice.app.model.Employee;
-import springbootrestservice.app.service.EmployeeService;
+import emp.api.model.Employee;
+import emp.api.service.EmployeeService;
 
 @RestController
 public class EmployeeController {
@@ -40,7 +39,7 @@ public class EmployeeController {
      /**
       * -------------------Retrieve Single Employee
       */
-    @RequestMapping(value = "/employee/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON)
+    @RequestMapping(value = "/employee/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Employee> getEmployee(@PathVariable("id") long id) {
         System.out.println("Fetching Employee with id " + id);
         Employee employee = empService.findById(id);

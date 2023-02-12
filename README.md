@@ -1,15 +1,15 @@
-# springBootRestAPI
-Technology used: Spring boot, Spring REST ws, JPA/Hibernate, Spring Data, JSON, MySQL database
+# Emp API's
+
+Tech used: Spring boot, Spring REST ws, JPA/Hibernate, Spring Data, JSON, MySQL database
 IDE: Spring Tool Suite
 Testing tool: Postman
 
 Layers ( Domain, Controller, Service, Service Validation, Repository )
 
-
 Sample test/interface postman 
 
 Inserting new Employee::
-POST  http://localhost:8080/springBootRestAPI/employee/
+POST  {{url}}/springBootRestAPI/employee/
   
   Body:
     {
@@ -22,7 +22,7 @@ POST  http://localhost:8080/springBootRestAPI/employee/
     
     Getting list of all Employees:
     
-    GET  http://localhost:8080/springBootRestAPI/employees/
+    GET  {{url}}/springBootRestAPI/employees/
     
     Result Body:
     
@@ -67,7 +67,7 @@ POST  http://localhost:8080/springBootRestAPI/employee/
 
 Get a spacific Employee byID: example  id:105
 
-GET  http://localhost:8080/springBootRestAPI/employee/105
+GET {{url}}/springBootRestAPI/employee/105
 
 Result Body:
 

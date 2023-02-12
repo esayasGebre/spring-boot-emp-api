@@ -1,4 +1,4 @@
-package springbootrestservice.app;
+package emp.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

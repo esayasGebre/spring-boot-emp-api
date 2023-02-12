@@ -1,6 +1,6 @@
 # Emp API's
 
-Tech used: Spring boot, Spring REST ws, JPA/Hibernate, Spring Data, JSON, MySQL database
+Tech. used: Spring boot, Spring REST, JPA/Hibernate, Spring Data, JSON, H2 database
 IDE: Spring Tool Suite
 Testing tool: Postman
 
@@ -9,20 +9,19 @@ Layers ( Domain, Controller, Service, Service Validation, Repository )
 Sample test/interface postman 
 
 Inserting new Employee::
-POST  {{url}}/springBootRestAPI/employee/
+POST  {{url}}/emp/api/employee/
   
   Body:
     {
-    	  "id":109,
+    	"id":109,
         "name":"joni",
-        "sex":"male",
         "salary":120000,
         "phone":"3127894321"
     }
     
     Getting list of all Employees:
     
-    GET  {{url}}/springBootRestAPI/employees/
+    GET  {{url}}/emp/api/employees/
     
     Result Body:
     
@@ -30,51 +29,45 @@ POST  {{url}}/springBootRestAPI/employee/
         {
             "id": 101,
             "name": "esa",
-            "sex": "male",
             "salary": 34000,
             "phone": "1213223333"
         },
         {
             "id": 102,
             "name": "aida",
-            "sex": "female",
             "salary": 75000,
             "phone": "7777777090"
         },
         {
             "id": 105,
             "name": "lora",
-            "sex": "male",
             "salary": 33000,
             "phone": "8888888888"
         },
         {
             "id": 107,
             "name": "fana",
-            "sex": "female",
             "salary": 3000,
             "phone": "9090909090"
         },
         {
             "id": 109,
             "name": "joni",
-            "sex": "male",
             "salary": 120000,
             "phone": "3127894321"
         }
     ]
 
 
-Get a spacific Employee byID: example  id:105
+Get Employee byID: example  id:105
 
-GET {{url}}/springBootRestAPI/employee/105
+GET {{url}}/emp/api/employee/105
 
 Result Body:
 
     {
       "id": 105,
       "name": "lora",
-      "sex": "male",
       "salary": 33000,
       "phone": "8888888888"
     }
@@ -90,7 +83,7 @@ Result Body:
             "error": "Internal Server Error",
             "exception": "java.lang.NullPointerException",
             "message": "No message available",
-            "path": "/springBootRestAPI/employee/100"
+            "path": "emp/api/employee/100"
         }
     
     

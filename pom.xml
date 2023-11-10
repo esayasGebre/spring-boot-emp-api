@@ -73,6 +73,14 @@
 <!--			<version>${log4j-core.version}</version>-->
 <!--		</dependency>-->
 
+		<!--
+		https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

@@ -20,4 +20,4 @@ spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
 
 server.port=8080
-server.servlet.context-path=/emp/api
+#server.servlet.context-path=/emp/api

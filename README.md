@@ -4,12 +4,12 @@ Tech. used: Spring boot, Spring REST, JPA/Hibernate, Spring Data, JSON, H2 datab
 IDE: Spring Tool Suite
 Testing tool: Postman
 
-Layers ( Domain, Controller, Service, Service Validation, Repository )
+Layers ( Config, Domain, Controller, Service, Service Validation, Repository )
 
 Sample test/interface postman 
 
 Inserting new Employee::
-POST  {{url}}/emp/api/employee/
+POST  {{url}}/emp/api/employees/
   
   Body:
     {
@@ -61,7 +61,7 @@ POST  {{url}}/emp/api/employee/
 
 Get Employee byID: example  id:105
 
-GET {{url}}/emp/api/employee/105
+GET {{url}}/emp/api/employees/105
 
 Result Body:
 

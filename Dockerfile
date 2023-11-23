@@ -1,5 +1,5 @@
 FROM openjdk:17
 VOLUME /tmp
-COPY /target/emp-api-0.0.1-SNAPSHOT.jar app.jar
+COPY /target/emp-api-0.0.1-SNAPSHOT.jar emp-api.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/emp-api.jar"]
